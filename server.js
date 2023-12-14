@@ -13,9 +13,7 @@ app.get('/api/v1/test', (request, response, next) => {
 app.get('/api/v2/test', (request, response, next) => {
     response.send({ success: false }); 
 });
-app.get('/api/v3/test',(request,response)=>{
-    response.send({success: "version three"});
-})
+
 server.listen(PORT, () => {
     console.log(`Server started at port: ${PORT}`);
 });
