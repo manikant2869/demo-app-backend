@@ -11,7 +11,7 @@ app.get('/api/v1/test', (request, response, next) => {
     response.send({ success: true });
 });
 app.get('/api/v2/test', (request, response, next) => {
-    response.send({ success: false }); 
+    response.send({ success: true }); 
 });
 
 server.listen(PORT, () => {
