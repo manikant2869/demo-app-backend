@@ -13,7 +13,9 @@ app.get('/api/v1/test', (request, response, next) => {
 app.get('/api/v2/test', (request, response, next) => {
     response.send({ success: true }); 
 });
-
+app.get('/api/v3/test',(req,res)=>{
+    res.send({message: "v3 testing"});
+})
 server.listen(PORT, () => {
     console.log(`Server started at port: ${PORT}`);
 });
