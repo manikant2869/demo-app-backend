@@ -19,6 +19,9 @@ app.get('/api/v3/test',(req,res)=>{
 app.get('/api/v4/test',(req,res)=>{
     res.send({message: "v4 testing"})
 })
+app.get('/api/v5/test',(req,res)=>{
+    res.send({message: "v5 testing"})
+})
 server.listen(PORT, () => {
     console.log(`Server started at port: ${PORT}`);
 });
